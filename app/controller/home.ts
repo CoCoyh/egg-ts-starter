@@ -1,8 +1,12 @@
-import { Controller } from 'egg';
+import { BaseController } from '../lib/base/controller';
+import routerDecorator from '../lib/router';
+import { Context } from 'egg';
 
-export default class HomeController extends Controller {
-  public async index() {
-    const { ctx } = this;
-    ctx.body = await ctx.service.test.sayHi('egg');
+
+@routerDecorator.prefix('/user', ['add', 'delete', 'update', 'info', 'list', 'page'])
+export default class HomeController extends BaseController {
+  constructor (ctx: Context) {
+    super(ctx);
+    this.setEntity(this.ctx.repo.User)
   }
 }

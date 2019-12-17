@@ -5,15 +5,14 @@ coverage/
 .idea/
 run/
 logs/
+typings/
 .DS_Store
 .vscode
 *.swp
 *.lock
-*.js
 !.autod.conf.js
 
-app/**/*.js
-test/**/*.js
+
 config/**/*.js
 app/**/*.map
 test/**/*.map

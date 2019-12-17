@@ -1,15 +1,15 @@
 {
-  "name": "ts-starter",
+  "name": "egg-ts-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "egg-ts-starter api接口 node版",
   "private": true,
   "egg": {
     "typescript": true,
     "declarations": true
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-ts-starter",
-    "stop": "egg-scripts stop --title=egg-server-ts-starter",
+    "start": "egg-scripts start --daemon --title=egg-ts-starter",
+    "stop": "egg-scripts stop --title=egg-ts-starter",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
@@ -19,11 +19,24 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "tslint --project . -c tslint.json",
-    "clean": "ets clean"
+    "clean": "ets clean",
+    "build": "npm run tsc"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "egg": "^2.6.1",
-    "egg-scripts": "^2.6.0"
+    "egg-jwt": "^3.1.6",
+    "egg-oss": "^2.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.6.0",
+    "egg-ts-typeorm": "^1.1.12",
+    "ipip-ipdb": "^0.3.0",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "svg-captcha": "^1.4.0",
+    "svg-to-dataurl": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
@@ -31,8 +44,8 @@
     "@types/supertest": "^2.0.0",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
-    "egg-ci": "^1.8.0",
     "egg-bin": "^4.11.0",
+    "egg-ci": "^1.8.0",
     "egg-mock": "^3.16.0",
     "tslib": "^1.9.0",
     "tslint": "^5.0.0",
@@ -49,7 +62,9 @@
     "type": "git",
     "url": ""
   },
-  "eslintIgnore": ["coverage"],
-  "author": "guoyanhong",
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "cool",
   "license": "MIT"
 }
