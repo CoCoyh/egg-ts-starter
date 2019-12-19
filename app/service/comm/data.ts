@@ -1,4 +1,4 @@
-import { BaseService } from '../../lib/base/service';
+import { BaseService } from 'egg-ts-service';
 
 /**
  * 基础数据操作服务类

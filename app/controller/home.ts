@@ -1,5 +1,5 @@
-import { BaseController } from '../lib/base/controller';
-import routerDecorator from '../lib/router';
+import { BaseController } from 'egg-ts-controller';
+import routerDecorator from 'egg-ts-router';
 import { Context } from 'egg';
 
 
