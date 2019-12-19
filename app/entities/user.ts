@@ -1,4 +1,4 @@
-import { BaseEntity } from '../lib/base/entity';
+import { BaseEntity } from 'egg-ts-entity';
 import { Column, Entity } from 'typeorm';
 
 @Entity({ name: 'user' })
