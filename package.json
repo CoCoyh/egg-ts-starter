@@ -40,7 +40,7 @@
     "egg-ts-router": "^1.0.4",
     "egg-ts-controller": "^1.0.3",
     "egg-ts-service": "^1.0.4",
-    "egg-ts-entity": "^1.0.1"
+    "egg-ts-entity": "^1.0.3"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
